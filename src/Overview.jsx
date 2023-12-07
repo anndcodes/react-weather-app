@@ -1,3 +1,5 @@
+import "./Overview.css"
+
 function Overview() {
   return (
     <div className="Overview">
