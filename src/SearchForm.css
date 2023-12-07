@@ -1,0 +1,33 @@
+.SearchForm {
+  padding-block: 20px 10px;
+}
+
+input[type="search"] {
+  font-size: 1.6rem;
+  padding-left: 15px;
+}
+
+input[type="search"]::placeholder {
+  opacity: 0.8;
+}
+
+button[type="submit"] {
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+#search-btn {
+  background: #e9a3e9;
+}
+
+#search-btn:hover {
+  color: #a893e0;
+}
+
+#current-btn {
+  background: #a893e0;
+}
+
+#current-btn:hover {
+  color: #e9a3e9;
+}

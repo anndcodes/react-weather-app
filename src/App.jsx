@@ -5,12 +5,14 @@ import "./App.css";
 import WeatherApp from "./WeatherApp";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <WeatherApp />
-    </>
+    <div className="App">
+      <div className="container">
+        <div className="weather-app-wrapper">
+          <WeatherApp />
+        </div>
+      </div>
+    </div>
   );
 }
 
