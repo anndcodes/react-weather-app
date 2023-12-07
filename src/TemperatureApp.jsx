@@ -1,3 +1,5 @@
+import "./TemperatureApp.css";
+
 function TemperatureApp() {
   return (
     <div className="TemperatureApp">
@@ -16,19 +18,23 @@ function TemperatureApp() {
         <div className="weather col-6">
           <div className="d-flex gap-2">
             <h2 id="temperature">38</h2>
-          </div>
-          <div>
-            <span className="units">
-              <a href="#" id="celsius" className="active">°C</a> 
-              |
-              <a href="#" id="fahrenheit">°F</a>
-            </span>
-            <p>
-              <small className="weather-data">
-                <span className="humidity">Humidity: 80%</span>
-                <div className="wind">Wind: 10km/h</div>
-              </small>
-            </p>
+            <div>
+              <span className="units">
+                <a href="#" id="celsius" className="active">
+                  °C
+                </a>
+                |
+                <a href="#" id="fahrenheit">
+                  °F
+                </a>
+              </span>
+              <p>
+                <small className="weather-data">
+                  <span className="humidity d-block">Humidity: 80%</span>
+                  <span className="wind d-block">Wind: 10km/h</span>
+                </small>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -36,4 +42,4 @@ function TemperatureApp() {
   );
 }
 
-export default TemperatureApp
+export default TemperatureApp;
