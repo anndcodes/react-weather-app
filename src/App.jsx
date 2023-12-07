@@ -11,6 +11,10 @@ function App() {
         <div className="weather-app-wrapper">
           <WeatherApp />
         </div>
+        <footer>
+          Open-source code by Annd on {""}
+          <a href="https://github.com/anndcodes/react-weather-app"><strong>Github</strong></a>
+        </footer>
       </div>
     </div>
   );
