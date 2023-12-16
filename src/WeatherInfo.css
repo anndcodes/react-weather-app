@@ -8,6 +8,7 @@
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 li {
@@ -16,8 +17,3 @@ li {
   line-height: 23px;
   font-size: 1.6rem;
 }
-
-
-
-
-

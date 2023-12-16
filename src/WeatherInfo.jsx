@@ -7,7 +7,7 @@ function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <h1 id="city">{props.data.city}</h1>
-      <ul>
+      <ul className="m-0 p-0">
         <li>
           <FormattedDate date={props.data.date} />
         </li>
