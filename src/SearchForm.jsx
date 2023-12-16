@@ -1,6 +1,6 @@
 import "./SearchForm.css";
 import axios from "axios";
-import TemperatureApp from "./TemperatureApp";
+import WeatherInfo from "./WeatherInfo";
 
 import { useState } from "react";
 
@@ -74,7 +74,7 @@ function SearchForm(props) {
             </div>
           </div>
         </form>
-        <TemperatureApp data={weatherData} />
+        <WeatherInfo data={weatherData} />
       </div>
     );
   } else {

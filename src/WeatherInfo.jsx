@@ -1,9 +1,10 @@
 import FormattedDate from "./FormattedDate";
+import Temperature from "./Temperature";
 import WeatherIcon from "./WeatherIcon";
 
-function TemperatureApp(props) {
+function WeatherInfo(props) {
   return (
-    <div className="TemperatureApp">
+    <div className="WeatherInfo">
       <h1>{props.data.city}</h1>
       <ul>
         <li>
@@ -15,17 +16,8 @@ function TemperatureApp(props) {
       </ul>
       <div className="row">
         <div className="col-6 d-flex">
-          <WeatherIcon code={props.data.icon}/>
-          <h2 id="temperature">{props.data.temperature}</h2>
-          <span className="units">
-            <a href="#" id="celsius" className="active">
-              °C
-            </a>
-            |
-            <a href="#" id="fahrenheit">
-              °F
-            </a>
-          </span>
+          <WeatherIcon code={props.data.icon} />
+          <Temperature celsius={props.data.temperature} />
         </div>
 
         <div className="col-6">
@@ -39,4 +31,4 @@ function TemperatureApp(props) {
   );
 }
 
-export default TemperatureApp;
+export default WeatherInfo;
