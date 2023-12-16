@@ -1,83 +1,23 @@
-#temperature {
-  font-size: 10rem;
+.WeatherInfo {
+  margin-top: 3rem;
+}
+
+#city {
+  font-size: 3.5rem;
+}
+
+ul {
+  padding: 0;
 }
 
 li {
   list-style: none;
   font-weight: 300;
-  line-height: 19px;
+  line-height: 23px;
   font-size: 1.6rem;
 }
 
-.weather-icon {
-  height: 80px;
-  width: 80px;
-}
 
-.weather-status,
-.weather {
-  padding-block: 20px;
-}
 
-#description {
-  font-size: 1.6rem;
-  font-weight: 300;
-  text-transform: capitalize;
-}
 
-.units,
-.weather-data {
-  position: relative;
-  top: 20px;
-}
 
-.units {
-  font-size: 1.9rem;
-}
-
-.units a {
-  cursor: pointer;
-  color: #ff9cfa;
-}
-
-.weather-data {
-  font-size: 1.4rem;
-}
-
-#celsius,
-#fahrenheit {
-  font-weight: 700;
-}
-
-.units .active {
-  cursor: default;
-  color: inherit;
-}
-
-.weather-forecast {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.forecast-icon {
-  width: 60px;
-  height: 60px;
-}
-
-.weather-forecast-date {
-  font-size: 1.7rem;
-  opacity: 0.7;
-}
-
-.weather-forecast-temp {
-  font-size: 1.4rem;
-}
-
-.weather-forecast-temp-max {
-  font-weight: 500;
-}
-
-.weather-forecast-temp-min {
-  opacity: 0.6;
-}

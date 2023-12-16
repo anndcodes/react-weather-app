@@ -1,0 +1,27 @@
+.Temperature {
+  margin-top: 3rem;
+}
+
+#temperature {
+  font-size: 8rem;
+}
+
+.units {
+  font-size: 2rem;
+  font-weight: 700;
+  position: relative;
+  top: 10px;
+  margin-left: 1rem;
+}
+
+.units a {
+  cursor: pointer;
+  color: #ff9cfa;
+}
+
+canvas {
+  width: 60px;
+  height: 60px;
+  margin-top: 4rem;
+  margin-right: 1rem;
+}
