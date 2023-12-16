@@ -1,4 +1,5 @@
 import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
 function TemperatureApp(props) {
   return (
@@ -14,10 +15,7 @@ function TemperatureApp(props) {
       </ul>
       <div className="row">
         <div className="col-6 d-flex">
-          <img
-            src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-            alt={props.data.description}
-          />
+          <WeatherIcon code={props.data.icon}/>
           <h2 id="temperature">{props.data.temperature}</h2>
           <span className="units">
             <a href="#" id="celsius" className="active">
