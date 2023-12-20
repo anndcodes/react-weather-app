@@ -16,12 +16,12 @@ function WeatherInfo(props) {
         </li>
       </ul>
       <div className="row d-flex align-items-center">
-        <div className="col-6 d-flex">
-          <WeatherIcon code={props.data.icon} />
+        <div className="col-6 d-flex align-items-baseline">
+          <WeatherIcon code={props.data.icon} size={60} />
           <Temperature celsius={props.data.temperature} />
         </div>
 
-        <div className="col-6 d-flex">
+        <div className="col-6">
           <ul className="weather-data">
             <li className="humidity">Humidity: {props.data.humidity}%</li>
             <li className="wind">Wind: {props.data.wind}km/h</li>
