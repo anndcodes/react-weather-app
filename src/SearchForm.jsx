@@ -10,13 +10,14 @@ function SearchForm(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    // console.log(response.data);
+    console.log(response.data);
     setWeatherData({
       ready: true,
       city: response.data.name,
       temperature: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
+      feelsLike: response.data.main.feels_like,
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
       date: new Date(response.data.dt * 1000),
@@ -45,7 +46,7 @@ function SearchForm(props) {
       <div className="SearchForm">
         <form onSubmit={handleSubmit} className="search-form">
           <div className="row justify-content-end">
-            <div className="col-5">
+            <div className="col-7 col-md-5">
               <input
                 onChange={handleCityChange}
                 className="form-control shadow"
@@ -56,22 +57,13 @@ function SearchForm(props) {
                 autoComplete="off"
               />
             </div>
-            <div className="col-2 justify-content-around">
+            <div className="col-5 col-md-3">
               <button
                 type="submit"
                 className="form-control btn shadow"
                 id="search-btn"
               >
                 Search
-              </button>
-            </div>
-            <div className="col-2">
-              <button
-                type="submit"
-                id="current-btn"
-                className="form-control btn shadow"
-              >
-                Current
               </button>
             </div>
           </div>

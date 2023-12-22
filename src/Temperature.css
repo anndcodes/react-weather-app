@@ -8,14 +8,12 @@
 }
 
 .units {
-  font-size: 2rem;
+  font-size: 5rem;
   font-weight: 700;
   position: relative;
-  top: 10px;
-  margin-left: 1rem;
+  top: -25px;
+  margin-left: 0.5rem;
 }
 
-.units a {
-  cursor: pointer;
-  color: #ff9cfa;
-}
+
+
